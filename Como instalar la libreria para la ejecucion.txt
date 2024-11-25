@@ -1,0 +1,4 @@
+Descargue la carpeta TDM-GCC-64 y ponla en el disco C donde estan las demas carpetas. Le dejo una imagen para que visualize.
+
+
+Luego proceda a descargar la carpeta tetris, y abrir el juego en CodeBlocks, el archivo a ejecutar se llama "TETRIS.cbp".
