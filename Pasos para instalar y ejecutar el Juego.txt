@@ -1,5 +1,12 @@
-Descargue la carpeta TDM-GCC-64 y ponla en el disco C donde estan las demas carpetas. Le dejo una imagen para que visualize.
+- Descargue la carpeta TDM-GCC-64 y ponla en el disco local C donde estan las demas carpetas. Le dejo una imagen para que visualize.
 
-Le proporcionamos una carpeta con el instalador de la aplicacion Codeblocks.
+- Descargue la aplicacion Codeblocks. Le dejamos el instalador del mismo en una carpeta.
 
-Luego proceda a descargar la carpeta tetris, y abrir el juego en CodeBlocks, el archivo a ejecutar se llama "TETRIS.cbp".
+- Al abrir CodeBlocks, dirijase a la opcción en la parte superior "Settings", luego a "Compiler...", luego a "Toolchain executables", y en "Compiler's installation directory" 
+debe agregar la direccion de donde se guardo la carpeta TDM-GCC-64, que lo mas común es que la dirección sea "C:\TDM-GCC-64". Luego de agregarlo presione OK. Esto lo hacemos
+para poder compilar el código.
+
+- Luego proceda a la carpeta Tetris, y debe ejecutar el archivo que se llama "TETRIS.cbp", este abrira automaticamente el codeblocks, con todo el proyecto. 
+
+- Ahora debe compilar el código. Le dejamos una imagen para ver como hacerlo.
+

@@ -791,3 +791,16 @@
 	<SDL2/SDL_mixer.h>
 	<SDL2/SDL_image.h>
 
+1732390021 source:c:\users\diego\desktop\tetris - laboratorio c algoritmoss\tetris\main.c
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+	<stdbool.h>
+	<stdio.h>
+	"juego.h"
+	<SDL2/SDL_mixer.h>
+	<SDL2/SDL_image.h>
+
+1732556214 c:\users\diego\desktop\tetris - laboratorio c algoritmoss\tetris\juego.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+

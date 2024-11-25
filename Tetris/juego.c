@@ -489,7 +489,7 @@ void dibujarPuntuacion(SDL_Renderer* renderer, TTF_Font *font) {
     SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
     int width, height;
     SDL_QueryTexture(texture, NULL, NULL, &width, &height);
-    SDL_Rect dstrect = {400, 50, width, height}; // Posición en la pantalla, desplazada hacia abajo
+    SDL_Rect dstrect = {400, 50, width, height};
 
     SDL_RenderCopy(renderer, texture, NULL, &dstrect);
     SDL_DestroyTexture(texture);
@@ -503,7 +503,7 @@ void renderizarMensajePausa(SDL_Renderer* renderer, TTF_Font *font) {
 
     int width, height;
     SDL_QueryTexture(texture, NULL, NULL, &width, &height);
-    SDL_Rect dstrect = { 98, (480 - height) / 2, width, height }; // Ajustar la posición a la izquierda
+    SDL_Rect dstrect = { 98, (480 - height) / 2, width, height };
 
     SDL_RenderCopy(renderer, texture, NULL, &dstrect);
     SDL_DestroyTexture(texture);
@@ -514,7 +514,7 @@ void renderizarMensajePausa(SDL_Renderer* renderer, TTF_Font *font) {
 void gameLoop(SDL_Renderer *renderer) {
     SDL_Event event;
     int running = 1;
-    TTF_Font *font = TTF_OpenFont("fuentes/letrita.ttf", 30); // Cargar fuente con tamaño más pequeño
+    TTF_Font *font = TTF_OpenFont("fuentes/letrita.ttf", 30);
 
     generarPieza(); // Genera la primera pieza
     startTime = SDL_GetTicks(); // Inicializar el tiempo de inicio del juego
@@ -607,14 +607,14 @@ void iniciarJuego() {
     cargarSonidos();
 
     // Cargar música de fondo
-    backgroundMusic = Mix_LoadMUS("sonidos/te.mp3"); // Asegúrate de usar la ruta correcta
+    backgroundMusic = Mix_LoadMUS("sonidos/te.mp3");
     if (!backgroundMusic) {
         printf("Error al cargar la música: %s\n", Mix_GetError());
     } else {
         Mix_PlayMusic(backgroundMusic, -1); // Reproduce la música en bucle
     }
 
-    SDL_Window* window = SDL_CreateWindow("Tetris", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN); // Aumentamos el ancho a 800
+    SDL_Window* window = SDL_CreateWindow("Tetris", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
 
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
